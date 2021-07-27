@@ -38,9 +38,7 @@ router.route("/login").post((req, res) => {
     }
     if (result.password === req.body.password) {
       // here we implement the JWT token functionality
-      let token = jwt.sign({ username: req.body.username }, config.key, {
-        expiresIn: "24h",
-      });
+      let token = jwt.sign({ username: req.body.username }, config.key, {});
 
       res.json({
         token: token,

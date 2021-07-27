@@ -13,9 +13,15 @@ connection.once("open",()=>{
 });
 
 //middleware
+app.use("/uploads",express.static("uploads"));//to make folder static so taht it is accicible from browser
 app.use(express.json());
 const userRoute = require("./routes/user");
 app.use("/user", userRoute);
+const profileRoute = require("./routes/profile");
+app.use("/profile", profileRoute);
+const blogRoute = require("./routes/blogpost");
+app.use("/blogPost", blogRoute);
+
 
 
 data = {

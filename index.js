@@ -25,11 +25,11 @@ app.use("/blogPost", blogRoute);
 
 
 data = {
-    msg: "Welcome on DevStack Blog App development YouTube video series",
+    msg: "Welcome on DevStack open diary App development ",
     info: "This is a root endpoint",
     Working: "Documentations of other endpoints will be release soon :)",
     request:
-      "Hey if you did'nt subscribed my YouTube channle please subscribe it",
+      "keep exploring ",
   };
   
 
